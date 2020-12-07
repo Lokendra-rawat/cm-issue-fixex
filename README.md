@@ -12,6 +12,8 @@
 - <code>select sum(total_after_discount) from order_items oi join orders o on o.order_id = oi.order_id and team_leader like '%7532857297' and processing_at >= '2020-12-01' and order_item_status = 'DELIVERED' and processing_at < '2021-01-01';</code>
 - check if processing
 - <code> select amount, status, type from wallet_transactions_view where team_leader_phone_number = '7532857297' and created_at >= '2020-11-01' and created_at < '2020-12-01' and status = 'processing';</code>
+- check if processed
+  - <code>select sum(amount), status, type from wallet_transactions_view where team_leader_phone_number = '8851454819' and created_at >= '2020-11-01' and created_at < '2020-12-01' group by 2,3;</code>
 ## How to check if a leader was already a Cx before. We disallow him to become CL again. This can be removed via "mark undiscarded from admin" on team leaders page.
 - <code>select already_a_cx, already_a_cx_wo_order from team_leaders where phone_number = '7761915827';</code>
 
