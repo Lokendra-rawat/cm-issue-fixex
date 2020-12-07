@@ -18,3 +18,5 @@
 - <code>select * from pincodes where pincode = '123412';</code>
 
 
+## How to change Leader
+- [![alt text](https://i.ibb.co/Wz01Txy/Whats-App-Image-2020-11-27-at-1-55-15-PM.jpg)](https://i.ibb.co/Wz01Txy/Whats-App-Image-2020-11-27-at-1-55-15-PM.jpg)
